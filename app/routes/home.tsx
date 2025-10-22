@@ -24,7 +24,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     <div>
       <h1>Clothify</h1>
 
-      <ul className="grid grid-cols-10">
+      <ul>
         {products.map((product) => {
           return (
             <li key={product.id}>
