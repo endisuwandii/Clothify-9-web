@@ -4,7 +4,7 @@ import type { Route } from "./+types/home";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Clothify" },
-    { name: "description", content: "Merchandise from the zoo." },
+    { name: "description", content: "Merchandise." },
   ];
 }
 
