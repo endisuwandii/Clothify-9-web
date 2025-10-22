@@ -23,7 +23,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <div>
       <h1>Clothify</h1>
-      // Ganti kode lama Anda dengan ini:
+      {/* Ganti kode lama Anda dengan ini: */}
       <div className="flex justify-center">
         <ul className="grid grid-cols-3 gap-4">
           {products.map((product) => {
