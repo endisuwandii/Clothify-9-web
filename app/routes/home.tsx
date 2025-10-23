@@ -21,25 +21,23 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   const { products } = loaderData;
 
   return (
-    <div>
+    <div className="flex justify-center mt-10">
       <h1>Clothify</h1>
-      {/* Ganti kode lama Anda dengan ini: */}
-      <div className="flex justify-center">
-        <ul className="grid grid-cols-3 gap-4">
-          {products.map((product) => {
-            return (
-              <li key={product.id}>
-                <img
-                  src={product.imageUrl}
-                  alt={product.name}
-                  className="size-52"
-                />
-                <h2>{product.name}</h2>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+
+      <ul className="grid grid-cols-3 gap-12 pt-10">
+        {products.map((product) => {
+          return (
+            <li key={product.id}>
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="size-52"
+              />
+              <h2>{product.name}</h2>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
