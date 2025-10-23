@@ -1,6 +1,7 @@
 import type { Products } from "~/modules/product/type";
 import type { Route } from "./+types/home";
-
+import type { Product } from "~/modules/product/type";
+import { ProductsGrid } from "~/modules/product/components/products-grid";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Clothify" },
