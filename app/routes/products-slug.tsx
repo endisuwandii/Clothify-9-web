@@ -10,7 +10,7 @@ import type * as Route from "~/routes/+types/products-slug";
 
 export function meta({ loaderData }: Route.MetaArgs) {
   return [
-    { title: `${loaderData.product.name} - Amazing Safari` },
+    { title: `${loaderData.product.name} - Clothify` },
     { name: "description", content: loaderData.product.description },
   ];
 }
