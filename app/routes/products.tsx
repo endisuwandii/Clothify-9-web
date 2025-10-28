@@ -5,8 +5,8 @@ import { ProductsGrid } from "~/modules/product/components/products-grid";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Products - Amazing Safari" },
-    { name: "description", content: "All products from Amazing Safari." },
+    { title: "Products - Clothify" },
+    { name: "description", content: "All products from Clothify." },
   ];
 }
 
