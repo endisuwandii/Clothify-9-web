@@ -27,7 +27,7 @@ export default function LayoutMain() {
           </li>
           <li>
             <Link to="/">
-              <img src="/logo.svg" alt="Logo" />
+              <img src="" alt="Logo" />
             </Link>
           </li>
           <li>
@@ -52,7 +52,7 @@ export default function LayoutMain() {
       <Outlet />
 
       <footer>
-        <p>&copy; {year} Amazing Safari</p>
+        <p>&copy; {year} Clothify</p>
       </footer>
     </div>
   );
