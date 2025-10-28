@@ -1,7 +1,7 @@
 import type { Products } from "~/modules/product/type";
-// @ts-expect-error: Route types may be missing during development
-import type { Route } from "./+types/products";
-import { ProductsGrid } from "~/modules/components/products-grid";
+
+import type * as Route from "~/routes/+types/products";
+import { ProductsGrid } from "~/modules/product/components/products-grid";
 
 export function meta({}: Route.MetaArgs) {
   return [

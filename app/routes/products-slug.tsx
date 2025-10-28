@@ -1,10 +1,12 @@
 import { Form } from "react-router";
+
 import type { Product } from "~/modules/product/type";
-// @ts-expect-error: Route types may be missing during development; ensure types exist in production
-import type * as Route from "./products-slug+types";
+
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { formatPrice } from "~/lib/format";
+
+import type * as Route from "~/routes/+types/products-slug";
 
 export function meta({ loaderData }: Route.MetaArgs) {
   return [

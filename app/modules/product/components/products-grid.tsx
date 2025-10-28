@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { Card, CardContent, CardHeader, CardTitle } from "~/components/ui/card";
 import { formatPrice } from "~/lib/format";
-import type { Products } from "~/modules/product/type";
+import type { Products } from "../type";
 
 export function ProductsGrid({ products }: { products: Products }) {
   return (
