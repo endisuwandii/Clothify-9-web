@@ -1,12 +1,9 @@
 import { Form } from "react-router";
-
 import type { Product } from "~/modules/product/type";
-
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { formatPrice } from "~/lib/format";
-
-import type * as Route from "~/routes/+types/products-slug";
+import type { Route } from "./+types/products-slug";
 
 export function meta({ loaderData }: Route.MetaArgs) {
   return [
