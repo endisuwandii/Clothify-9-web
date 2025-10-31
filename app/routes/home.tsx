@@ -23,8 +23,6 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
   return (
     <div className="flex justify-center mt-10">
-      <h1>Clothify</h1>
-
       <ul className="grid grid-cols-3 gap-12 pt-10">
         {products.map((product) => {
           return (
