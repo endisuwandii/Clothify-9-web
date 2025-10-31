@@ -22,7 +22,7 @@ export function ProductsGrid({ products }: { products: Products }) {
                   <CardTitle className="text-lg">{product.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-col items-end">
-                  <p className="text-2xl font-bold text-primary-foreground">
+                  <p className="text-2xl font-bold">
                     {formatPrice(product.price)}
                   </p>
                   <p className="text-md text-muted-foreground">
