@@ -1,4 +1,4 @@
-import { HouseIcon, KeyRound, PandaIcon, ShoppingCartIcon } from "lucide-react";
+import { HouseIcon, KeyRound, ShirtIcon, ShoppingCartIcon } from "lucide-react";
 import { Link, Outlet } from "react-router";
 import { Button } from "~/components/ui/button";
 
@@ -6,7 +6,7 @@ export default function LayoutMain() {
   const year = new Date().getFullYear();
 
   return (
-    <div>
+    <div className="flex flex-col h-screen">
       <nav className="flex justify-center p-4">
         <ul className="flex gap-10 items-center">
           <li>
@@ -20,14 +20,14 @@ export default function LayoutMain() {
           <li>
             <Button asChild>
               <Link to="/products">
-                <PandaIcon />
+                <ShirtIcon />
                 Products
               </Link>
             </Button>
           </li>
           <li>
             <Link to="/">
-              <img src="" alt="Logo" />
+              <h1>Clothify</h1>
             </Link>
           </li>
           <li>
@@ -49,7 +49,9 @@ export default function LayoutMain() {
         </ul>
       </nav>
 
-      <Outlet />
+      <div className="flex-1">
+        <Outlet />
+      </div>
 
       <footer>
         <p>&copy; {year} Clothify</p>
