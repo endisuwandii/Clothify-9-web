@@ -1,5 +1,5 @@
-import type { Route } from "./+types/dashboard";
 import { Form } from "react-router";
+import type { Route } from "../+types/root";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Dashboard" }];
