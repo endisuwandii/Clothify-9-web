@@ -1,6 +1,4 @@
-import type { Products } from "~/modules/product/type";
-import type { Route } from "./+types/home";
-import { ProductsGrid } from "~/modules/product/components/products-grid";
+import type { Route } from "./+types/register";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Register" }];
