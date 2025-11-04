@@ -4,6 +4,10 @@ export function meta({}: Route.MetaArgs) {
   return [{ title: "Register" }];
 }
 
-export default function RegisterRoute() {
-  return <h1>Create New Account </h1>;
+export default function RegisterRoute({}: Route.ComponentProps) {
+  return (
+    <div>
+      <h1>Create New Account </h1>
+    </div>
+  );
 }
