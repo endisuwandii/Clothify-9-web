@@ -13,7 +13,7 @@ export default function RegisterRoute({}: Route.ComponentProps) {
       <h1>Create New Account </h1>
       <Form>
         <Label htmlFor="username">Username</Label>
-        <Input id="username" type="text" name="username"></Input>
+        <Input id="username" type="text" name="username" />
       </Form>
     </div>
   );
