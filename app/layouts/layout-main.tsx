@@ -27,7 +27,7 @@ export default function LayoutMain() {
           </li>
           <li>
             <Link to="/">
-              <h1>Clothify</h1>
+              <h1 className="font-extrabold">Clothify</h1>
             </Link>
           </li>
           <li>
