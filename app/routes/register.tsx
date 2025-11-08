@@ -1,5 +1,7 @@
-import type { Route } from "./+types/register";
-import { Form } from "react-router";
+import type { Route } from "react-router";
+import type { Route } from "../+types/routes/register";
+
+
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Register" }];
