@@ -1,8 +1,15 @@
+<<<<<<< HEAD
+import type { Route } from "react-router";
+import type { Route } from "../+types/routes/register";
+
+
+=======
 import type { Route } from "./+types/register";
 
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
+>>>>>>> 0db27a31b83b4b9391b973a468a4bfe4afa298f3
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Register" }];
