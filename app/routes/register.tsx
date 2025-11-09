@@ -16,7 +16,7 @@ export default function RegisterRoute({}: Route.ComponentProps) {
           Register
         </h1>
 
-        <form>
+        <form method="POST">
           {/* Username */}
           <div className="space-y-2 mb-4">
             <Label htmlFor="username">Username</Label>
