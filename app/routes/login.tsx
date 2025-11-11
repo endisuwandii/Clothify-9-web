@@ -19,7 +19,7 @@ export default function LoginRoute({}: Route.ComponentProps) {
           Please enter your e-mail and password:
         </h3>
 
-        <form>
+        <Form method="POST">
           {/* Email */}
           <div className="space-y-2 mb-4">
             <Label htmlFor="email"></Label>
@@ -48,7 +48,7 @@ export default function LoginRoute({}: Route.ComponentProps) {
           <Button type="submit" className="w-full">
             Log In
           </Button>
-        </form>
+        </Form>
 
         <p className="text-sm text-center text-gray-500 mt-4">
           Don’t have an account? ?{" "}
@@ -59,4 +59,23 @@ export default function LoginRoute({}: Route.ComponentProps) {
       </div>
     </div>
   );
+}
+
+export async function clientAction({ request }: Route.ClientActionArgs) {
+  const formData = await request.formData();
+
+  const email = formData.get("email")?.toString();
+
+  const password = formData.get("password")?.toString();
+
+  const loginBody = {
+    email,
+    password,
+  };
+
+  console.log(loginBody);
+
+  // const project = await someApi.updateProject({ title });
+
+  return null;
 }
