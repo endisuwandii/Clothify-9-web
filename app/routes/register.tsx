@@ -1,3 +1,4 @@
+import { Form } from "react-router";
 import type { Route } from "./+types/register";
 
 import { Button } from "~/components/ui/button";
@@ -16,7 +17,7 @@ export default function RegisterRoute({}: Route.ComponentProps) {
           Register
         </h1>
 
-        <form method="POST">
+        <Form method="POST">
           {/* Username */}
           <div className="space-y-2 mb-4">
             <Label htmlFor="username">Username</Label>
@@ -69,7 +70,7 @@ export default function RegisterRoute({}: Route.ComponentProps) {
           <Button type="submit" className="w-full">
             Register User
           </Button>
-        </form>
+        </Form>
 
         <p className="text-sm text-center text-gray-500 mt-4">
           Already have an account ?{" "}
