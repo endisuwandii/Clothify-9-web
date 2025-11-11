@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import type { Route } from "./+types/login";
 import { Form, redirect } from "react-router";
 import { Button } from "~/components/ui/button";
@@ -6,7 +7,7 @@ import { Label } from "~/components/ui/label";
 import type { LoginResponse } from "~/modules/user/type";
 
 export function meta({}: Route.MetaArgs) {
-  return [{ title: "Register" }];
+  return [{ title: "Login" }];
 }
 
 export default function LoginRoute({}: Route.ComponentProps) {
@@ -70,6 +71,8 @@ export async function clientAction({ request }: Route.ClientActionArgs) {
     password: formData.get("password")?.toString(),
   };
 
+  console.log(loginBody);
+
   const response = await fetch(
     `${import.meta.env.VITE_BACKEND_API_URL}/auth/login`,
     {
@@ -80,6 +83,10 @@ export async function clientAction({ request }: Route.ClientActionArgs) {
   );
 
   const loginResponse: LoginResponse = await response.text();
+
   console.log(loginResponse);
-  return redirect("/Dashboard");
+
+  Cookies.set("token", loginResponse);
+
+  return redirect("/dashboard");
 }
