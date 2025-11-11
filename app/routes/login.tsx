@@ -82,6 +82,4 @@ export async function clientAction({ request }: Route.ClientActionArgs) {
   const loginResponse: LoginResponse = await response.text();
   console.log(loginResponse);
   return redirect("/Dashboard");
-
-  // const project = await someApi.updateProject({ title });
 }
