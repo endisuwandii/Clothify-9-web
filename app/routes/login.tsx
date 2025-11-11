@@ -1,8 +1,9 @@
 import type { Route } from "./+types/login";
-import { Form } from "react-router";
+import { Form, redirect } from "react-router";
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
+import type { LoginResponse } from "~/modules/user/type";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Register" }];
@@ -64,18 +65,23 @@ export default function LoginRoute({}: Route.ComponentProps) {
 export async function clientAction({ request }: Route.ClientActionArgs) {
   const formData = await request.formData();
 
-  const email = formData.get("email")?.toString();
-
-  const password = formData.get("password")?.toString();
-
   const loginBody = {
-    email,
-    password,
+    email: formData.get("email")?.toString(),
+    password: formData.get("password")?.toString(),
   };
 
-  console.log(loginBody);
+  const response = await fetch(
+    `${import.meta.env.VITE_BACKEND_API_URL}/auth/login`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(loginBody),
+    }
+  );
+
+  const loginResponse: LoginResponse = await response.text();
+  console.log(loginResponse);
+  return redirect("/Dashboard");
 
   // const project = await someApi.updateProject({ title });
-
-  return null;
 }
