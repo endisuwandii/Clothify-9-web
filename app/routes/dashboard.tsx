@@ -1,5 +1,5 @@
 import { Form } from "react-router";
-import type { Route } from "../+types/root";
+import type { Route } from "./+types/dashboard";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Dashboard" }];
@@ -8,7 +8,7 @@ export function meta({}: Route.MetaArgs) {
 export default function DashboardRoute({}: Route.ComponentProps) {
   return (
     <div>
-      <h1>Dashboard </h1>
+      <h1>Dashboard</h1>
     </div>
   );
 }
