@@ -1,16 +1,10 @@
-<<<<<<< HEAD
-=======
 import { Form, redirect } from "react-router";
->>>>>>> 1cede32f465b36718225f4b1afbef524d0b9e66a
 import type { Route } from "./+types/register";
 
 import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { Label } from "~/components/ui/label";
-<<<<<<< HEAD
-=======
 import type { RegisterResponse } from "~/modules/user/type";
->>>>>>> 1cede32f465b36718225f4b1afbef524d0b9e66a
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Register" }];

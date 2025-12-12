@@ -1,9 +1,6 @@
 # Clothify
 
-![Clothify Banner](https://via.placeholder.com/1200x600?text=Clothify+App+Preview)
-_(Note: Please replace the image link above with a real screenshot of your application)_
-
-**Clothify** is a modern e-commerce platform designed to provide a seamless fashion shopping experience. Built with a focus on performance and developer experience, this application leverages the speed of the **Bun** runtime and the power of **React Router v7** for Server-Side Rendering (SSR).
+**Clothify** is a modern Simple e-commerce platform designed to provide a seamless fashion shopping experience. Built with a focus on performance and developer experience, this application leverages the speed of the **Bun** runtime and the power of **React Router v7** for Server-Side Rendering (SSR).
 
 This project features fully interactive API documentation, making it easy to explore and integrate.
 
