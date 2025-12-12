@@ -1,87 +1,50 @@
-# Welcome to React Router!
+# Clothify
 
-A modern, production-ready template for building full-stack React applications using React Router.
+![Clothify Banner](https://via.placeholder.com/1200x600?text=Clothify+App+Preview)
+_(Note: Please replace the image link above with a real screenshot of your application)_
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+**Clothify** is a modern e-commerce platform designed to provide a seamless fashion shopping experience. Built with a focus on performance and developer experience, this application leverages the speed of the **Bun** runtime and the power of **React Router v7** for Server-Side Rendering (SSR).
 
-## Features
+This project features fully interactive API documentation, making it easy to explore and integrate.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 🌟 Key Features
 
-## Getting Started
+- **High Performance:** Powered by **Bun** for ultra-fast package management and execution.
+- **Server-Side Rendering (SSR):** Optimized for SEO and faster initial page loads using React Router v7.
+- **Interactive API Docs:** Beautiful and testable API documentation via **Scalar UI**.
+- **Modern Styling:** Clean and responsive interface built with TailwindCSS.
+- **Type-Safe:** Fully typed with TypeScript for robust code quality.
+- **Containerized:** Production-ready Docker setup.
+
+## 📖 API Documentation
+
+Clothify provides comprehensive API documentation for developers:
+
+- **OpenAPI Specification:** Access the detailed API spec at:
+  `http://localhost:5173/api-spec`
+- **Scalar UI (Interactive):** Test endpoints directly through the visual interface at:
+  `http://localhost:5173/ui`
+
+## 🛠️ Tech Stack
+
+- **Runtime & Manager:** Bun
+- **Framework:** React Router v7
+- **Language:** TypeScript
+- **Styling:** TailwindCSS
+- **API Docs:** Scalar
+- **Deployment:** Docker
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally using Bun.
+
+### Prerequisites
+
+Make sure you have [Bun](https://bun.sh/) installed on your machine.
 
 ### Installation
 
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+1. **Install dependencies:**
+   ```bash
+   bun install
+   ```
